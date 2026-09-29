@@ -1,18 +1,42 @@
-# Omerninyo Tap
+# 🍺 Official Homebrew Tap for RightSub
 
-## How do I install these formulae?
+Official Homebrew Tap for **RightSub** — Universal Subtitle Mastering & Translation Suite for Movies & TV Series.
 
-`brew install omerninyo/tap/<formula>`
+## 📦 Installation
 
-Or `brew tap omerninyo/tap` and then `brew install <formula>`.
+To install `rightsub` globally on macOS or Linux:
 
-Or, in a `brew bundle` `Brewfile`:
+```bash
+# 1. Tap the repository
+brew tap omerninyo/tap
 
-```ruby
-tap "omerninyo/tap"
-brew "<formula>"
+# 2. In Homebrew 7.0+, approve the tap:
+brew trust omerninyo/tap
+
+# 3. Install RightSub
+brew install rightsub
 ```
 
-## Documentation
+Or as a single command:
+```bash
+brew install omerninyo/tap/rightsub
+```
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+## 🚀 Quickstart
+
+Once installed, `rightsub` is available globally in any terminal:
+
+```bash
+# Autonomous mastering & Plex BiDi repair
+rightsub auto "Movie.mkv"
+
+# Semantic AI proofreading & canon QC
+rightsub polish "Star Wars.he.srt"
+
+# View all CLI commands
+rightsub --help
+```
+
+## 📄 Main Project Repository
+For full documentation, benchmarks, and guides, visit:
+**[https://github.com/omerninyo/RightSub](https://github.com/omerninyo/RightSub)**
