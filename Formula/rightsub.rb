@@ -1,17 +1,17 @@
 class Rightsub < Formula
 
   desc "Universal Subtitle Mastering & Translation Suite for Movies & TV Series"
-  homepage "https://github.com/omerninyo/RightSub"
-  url "https://github.com/omerninyo/RightSub/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "8979fadd6b742e42ad564c5a00e9649e74c27cfd6d188b80f829a60701144199"
-  version "1.3.0"
+  homepage "https://rightsub.ninyo.co"
+  url "https://github.com/omerninyo/RightSub/archive/refs/tags/v1.5.0.tar.gz"
+  sha256 "f3791fcc12360e1e8810575f2320ee6736c13269f16f1931127ebadcefccc08e"
+  version "1.5.0"
   license "MIT"
   head "https://github.com/omerninyo/RightSub.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/omerninyo/homebrew-tap/releases/download/v1.3.0"
-    rebuild 11
-    sha256 cellar: :any_skip_relocation, all: "7326e8147b823ac0809c7541316b30c68a77cdf2ff370e7b3e77dab7169d7930"
+    root_url "https://github.com/omerninyo/homebrew-tap/releases/download/v1.5.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, all: "400de8ea2e537e7a5204e695e6e5366bc4aa54fef7b782bb95f6a4022f674275"
   end
 
   depends_on "ffmpeg"
@@ -40,9 +40,12 @@ class Rightsub < Formula
       RightSub is installed! You can now run 'rightsub' from anywhere in your terminal.
       
       Quick Examples:
+        rightsub                       # Launch Interactive Mastering Wizard
+        rightsub setup                 # First-Time Setup, Hooks & Service Wizard
+        rightsub mcp --install         # Connect AI Agents (Antigravity, Claude, Cursor)
         rightsub auto "Movie.mkv"
         rightsub fix-plex "Episode.he.srt"
-        rightsub polish "Star Wars.he.srt"
+        rightsub polish "Star Wars.he.srt" --interactive
         rightsub --help
     EOS
   end
